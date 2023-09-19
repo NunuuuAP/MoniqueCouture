@@ -9,7 +9,7 @@ import HorizontalGallery from '../components/HorizontalGallery.vue';
     <MainGallery />
     <WelcomePage />
     <HorizontalGallery gallery="Últimas creaciones" />
-    <HorizontalGallery gallery="Los favoritos" />
+    <HorizontalGallery gallery="Tus favoritos" />
   </main>
 </template>
 

@@ -33,6 +33,10 @@
 </template>
   
 <style scoped>
+section {
+  margin: 20px 0;
+}
+
 #title {
   font-weight: 500;
   font-size: 2em;
@@ -44,7 +48,6 @@
   justify-content: space-around;
   gap: 10px;
   width: calc(100vw - 160px);
-  margin: 30px 0;
 }
 .element {
   display: flex;
