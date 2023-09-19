@@ -1,17 +1,16 @@
 <template>
-    <div class="background">
+    <div class="gallery">
         <div class="left">
-            <img src="./assets/bolso.jpeg" alt="Descripción del bolso" />
-            <img src="./assets/bolso.jpeg" alt="Descripción del bolso" />
+            <div>hola</div>
+            <div>adios</div>
         </div>
         <div class="right">
-            <img src="./assets/bolso.jpeg" alt="Descripción del bolso" />
         </div>
     </div>
 </template>
 
 <style scoped>
-.background {
+.gallery {
     display: flex;
     width: calc(100vw - 160px);
     height: 80vh;
@@ -22,19 +21,21 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 15px;
-    width: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.left div {
+    flex: 1;
+    background-color: blue;
 }
 
 .right {
     flex: 2;
     height: auto;
-    overflow: hidden;
-}
+    background-color: red;
 
-.left img, .right img {
-    object-fit: cover;
 }
 
 </style>
