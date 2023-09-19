@@ -58,7 +58,6 @@
   height: fit-content;
   aspect-ratio: 3/4;
   margin-bottom: 20px;
-  border-radius: 10px;
 }
 
 #productPrice, #productName {
@@ -67,6 +66,7 @@
 
 #productName {
   color: var(--accent);
+  font-weight: bold;
 }
 
 #productPrice {

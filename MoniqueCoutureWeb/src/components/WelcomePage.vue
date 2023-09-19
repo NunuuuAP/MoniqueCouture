@@ -1,17 +1,20 @@
 <template>
-    <div class="background">
+    <section>
         <h1>¡Bienvenid@!</h1>
         <p>Monique Couture es una empresa nacida en 2023 desde el escritorio de una ingeniera con mucho interés y creatividad.
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor exercitationem, harum minima totam mollitia excepturi quaerat, doloribus necessitatibus facere ullam fugiat molestiae? Nihil dolor qui perferendis consectetur, dolorum totam corrupti?</p>
-    </div>
+    </section>
 </template>
 
 <style scoped>
-.background {
-    width: calc(100vw - 160px);
-    height: fit-content;
+section {
     margin: 20px;
-    padding: 10px;
     text-align: center;
+    color: var(--accent);
+}
+
+h1 {
+    font-weight: bold;
+    margin: 10px;
 }
 </style>
