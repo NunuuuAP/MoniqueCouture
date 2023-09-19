@@ -1,7 +1,7 @@
 <template>
     <div class="background">
         <menu>
-            <img src="../assets/logo.png" alt="Monique Couture logo" />
+            <img src="../assets/LogoPruebas.png" alt="Monique Couture logo" />
             <RouterLink to="/">Inicio</RouterLink>
             <RouterLink to="/orders">Encargos</RouterLink>
             <RouterLink to="/fabrics">Tejidos</RouterLink>

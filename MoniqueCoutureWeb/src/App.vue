@@ -6,9 +6,8 @@ import PageFooter from './components/PageFooter.vue';
 
 <template>
   <HeaderBanner />
-  <header>
-    <div class="background">
-      <img src="../assets/logo.png" alt="Monique Couture logo" />
+    <div id="header">
+      <img src="./assets/LogoPruebas.svg" alt="Monique Couture logo" />
       <nav>
         <RouterLink to="/">Inicio</RouterLink>
         <RouterLink to="/orders">Encargos</RouterLink>
@@ -18,30 +17,44 @@ import PageFooter from './components/PageFooter.vue';
         <!--<input v-model="search">-->
       </nav>
     </div>
-  </header>
   <RouterView />
   <PageFooter />
 </template>
 
 <style scoped>
 
-header .background {
+#header {
   position: sticky;
   top: 0;
   display: flex;
+  flex: 1;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-end;
   background-color: var(--background);
   color: var(--typo);
   width: 100vw;
   height: fit-content;
-  padding: 50px 0 30px 0;
+  padding: 30px 85px;
   text-align: center;
+  gap: 20px;
 }
 
 nav {
   display: flex;
-  gap: 50px;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--typo);
+  font-size: 1.2em;
+}
+
+#header img {
+  width: 20%;
 }
 
 </style>
