@@ -1,33 +1,20 @@
 <script setup lang="ts">
     defineProps<{
       gallery: string
+      elements: number
     }>()
+
 </script>
 
 <template>
   <section>
     <h2 id="title">{{ gallery }}</h2>
     <div class="gallery">
-      <div class="element">
+      <div class="element" v-for="index in elements" :key="index">
         <img src="./assets/bolso.jpeg" alt="Creation 1" />
         <div id="productName">Nombre del producto</div>
         <div id="productPrice">Precio X€</div>
       </div>
-      <div class="element">
-        <img src="./assets/bolso.jpeg" alt="Creation 1" />
-        <div id="productName">Nombre del producto</div>
-        <div id="productPrice">Precio X€</div>
-      </div>
-      <div class="element">
-        <img src="./assets/bolso.jpeg" alt="Creation 1" />
-        <div id="productName">Nombre del producto</div>
-        <div id="productPrice">Precio X€</div>
-      </div>
-      <div class="element">
-        <img src="./assets/bolso.jpeg" alt="Creation 1" />
-        <div id="productName">Nombre del producto</div>
-        <div id="productPrice">Precio X€</div>
-      </div> 
     </div>
   </section>
 </template>
@@ -46,15 +33,16 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
   gap: 10px;
-  width: calc(100vw - 160px);
+  
 }
 .element {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex: 1;
-  margin: 10px;
+  flex: 0 0 calc(25% - 15px);
+  margin: 15px 0;
 }
 .element img {
   width: 100%;

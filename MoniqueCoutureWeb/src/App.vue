@@ -10,7 +10,7 @@ import PageFooter from './components/PageFooter.vue';
       <img src="./assets/LogoPruebas.svg" alt="Monique Couture logo" />
       <nav>
         <RouterLink to="/">Inicio</RouterLink>
-        <RouterLink to="/orders">Encargos</RouterLink>
+        <RouterLink to="/orders">Por encargo</RouterLink>
         <RouterLink to="/fabrics">Tejidos</RouterLink>
         <RouterLink to="/about">Sobre nosotros</RouterLink>
         <RouterLink to="/account">Mi cuenta</RouterLink>
@@ -35,7 +35,7 @@ import PageFooter from './components/PageFooter.vue';
   color: var(--typo);
   width: 100vw;
   height: fit-content;
-  padding: 30px 85px;
+  padding: 15px 85px 10px 85px;
   text-align: center;
   gap: 20px;
 }
@@ -54,7 +54,8 @@ nav a {
 }
 
 #header img {
-  width: 20%;
+  width: 15%;
+  min-width: 80px;
 }
 
 </style>

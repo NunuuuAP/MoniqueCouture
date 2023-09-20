@@ -1,10 +1,11 @@
 <template>
     <div class="gallery">
         <div class="left">
-            <div>hola</div>
-            <div>adios</div>
+            <div>Aquí van imágenes</div>
+            <div>Aquí van imágenes</div>
         </div>
         <div class="right">
+            Aquí van imágenes
         </div>
     </div>
 </template>
@@ -28,13 +29,13 @@
 
 .left div {
     flex: 1;
-    background-color: blue;
+    background-color:aqua;
 }
 
 .right {
     flex: 2;
     height: auto;
-    background-color: red;
+    background-color:aquamarine;
 
 }
 

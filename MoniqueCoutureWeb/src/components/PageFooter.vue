@@ -2,18 +2,18 @@
     <div class="container">
         <div class="info">
             <div class="bar left">
-                <button>Términos generales y condiciones</button>
-                <button>Politica de confidencialidad</button>
-                <button>Entregas y devoluciones</button>
-                <button>La marca</button>
-                <button>Contactar</button>
+                <RouterLink to="/contact">Términos generales y condiciones</RouterLink>
+                <RouterLink to="/contact">Politica de confidencialidad</RouterLink>
+                <RouterLink to="/contact">Entregas y devoluciones</RouterLink>
+                <RouterLink to="/contact">La marca</RouterLink>
+                <RouterLink to="/contact">Contactar</RouterLink>
             </div>
             <img src="../assets/FooterLogo.svg" alt="Monique Couture logo" />
             <div class="bar right">
-                <button>Biblioteca de telas</button>
-                <button>Encargos</button>
-                <button>Tarjeta de regalo</button>
-                <button>Mi cuenta</button>
+                <RouterLink to="/contact">Biblioteca de telas</RouterLink>
+                <RouterLink to="/contact">Encargos</RouterLink>
+                <RouterLink to="/contact">Tarjeta de regalo</RouterLink>
+                <RouterLink to="/contact">Mi cuenta</RouterLink>
             </div>
         </div>
         <div class="end">
@@ -58,18 +58,18 @@
     gap: 10px;
 }
 
-.bar button {
-    border: none;
+.bar a {
+    text-decoration: none;
     background-color: transparent;
     color: var(--accent-typo);
     font-size: 1em;
 }
 
-.bar.left button{
+.bar.left a {
     text-align: left;
 }
 
-.bar.right button{
+.bar.right a {
     text-align: right;
 }
 .end {

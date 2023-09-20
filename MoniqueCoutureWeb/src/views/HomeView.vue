@@ -8,9 +8,11 @@ import HorizontalGallery from '../components/HorizontalGallery.vue';
   <main>
     <MainGallery />
     <WelcomePage />
-    <HorizontalGallery gallery="Últimas creaciones" />
-    <HorizontalGallery gallery="Tus favoritos" />
   </main>
+  <section>
+    <HorizontalGallery gallery="Últimas creaciones" :elements="4"/>
+    <HorizontalGallery gallery="Tus favoritos" :elements="4"/>
+  </section>
 </template>
 
 <style scoped>
@@ -19,7 +21,15 @@ main {
   flex-direction: column;
   overflow: hidden;
   margin: 0;
-  padding: 20px 80px;
+  padding: 0 80px;
+  gap: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 5px;
   gap: 10px;
 }
 </style>

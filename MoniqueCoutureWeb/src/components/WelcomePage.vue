@@ -16,5 +16,10 @@ section {
 h1 {
     font-weight: bold;
     margin: 10px;
+    font-size: 2em;
 }
+
+p {
+    font-size: 1.2em;
+} 
 </style>
